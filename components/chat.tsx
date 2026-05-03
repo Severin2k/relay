@@ -44,7 +44,7 @@ function genId() {
 }
 
 function extractQuestions(text: string, from: "plan" | "coder"): Question[] {
-  const regex = /@severin[\s:,]*([^@]*)/gi;
+  const regex = /@user[\s:,]*([^@]*)/gi;
   const questions: Question[] = [];
   let match;
   while ((match = regex.exec(text)) !== null) {

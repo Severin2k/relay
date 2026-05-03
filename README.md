@@ -9,8 +9,8 @@ Relay nutzt Claude ueber die **Claude Code CLI** (`claude -p`) - nicht ueber die
 ## Was es kann
 
 - **Zwei LLMs im Dialog** - Plan-LLM (z.B. Phi4 lokal) und Coder-LLM (z.B. Claude Code) diskutieren zusammen
-- **Automatisches Routing** - `@Plan`, `@Coder`, `@Severin` steuern wer antwortet. Mehrere Mentions in einer Nachricht triggern parallele Antworten
-- **Offene Fragen Panel** - Fragen an `@Severin` werden automatisch extrahiert und separat angezeigt
+- **Automatisches Routing** - `@Plan`, `@Coder`, `@User` steuern wer antwortet. Mehrere Mentions in einer Nachricht triggern parallele Antworten
+- **Offene Fragen Panel** - Fragen an `@User` werden automatisch extrahiert und separat angezeigt
 - **Projekt-Kontext** - `project.md` halt Entscheidungen fest, beide LLMs bekommen sie als Kontext statt den ganzen Chatverlauf
 - **Build it** - Fertiger Prompt zwischen `---RELAY_PROMPT_START---` / `---RELAY_PROMPT_END---` kann direkt an Claude Code mit vollem Tool-Zugriff uebergeben werden
 - **In Schritte aufteilen** - Plan-LLM zerlegt grosse Auftraege in kleine testbare Schritte, jeder mit eigenem Build-Button
@@ -104,7 +104,7 @@ Beide LLMs bekommen eigene System-Prompts die per Upload (.md/.txt) geladen werd
 
 1. Du beschreibst was du bauen willst (an Plan oder Coder)
 2. Die LLMs diskutieren - `@Plan` und `@Coder` routen automatisch
-3. Fragen an `@Severin` erscheinen im Fragen-Panel rechts
+3. Fragen an `@User` erscheinen im Fragen-Panel rechts
 4. Wenn der Plan steht, gibt das Plan-LLM einen Prompt im `RELAY_PROMPT` Format aus
 5. "Build it" uebergibt den Prompt an Claude Code mit vollem Tool-Zugriff
 6. Oder "In Schritte aufteilen" laesst das Plan-LLM den Auftrag in kleine Schritte zerlegen

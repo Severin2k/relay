@@ -55,7 +55,7 @@ const DECISION_PATTERNS = [
 const OPEN_PATTERNS = [
   /\b(noch (offen|unklar|zu klären))\b/i,
   /\b(müssen wir noch|sollten wir noch)\b/i,
-  /\b(@severin)\b/i,
+  /\b(@user)\b/i,
 ];
 
 const NEXT_STEP_PATTERNS = [
