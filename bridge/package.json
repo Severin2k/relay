@@ -1,0 +1,8 @@
+{
+  "name": "relay-bridge",
+  "version": "1.0.0",
+  "description": "Bridge between Relay and Claude Code CLI",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
