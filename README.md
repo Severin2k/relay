@@ -2,6 +2,10 @@
 
 Chat-Interface das zwei LLMs miteinander reden lasst - ein Plan-LLM und ein Coder-LLM. Beide sehen den kompletten Chatverlauf, konnen sich gegenseitig ansprechen und arbeiten zusammen an einem Auftrag. Wenn der Plan steht, baut Claude Code ihn auf Knopfdruck.
 
+## Keine extra API-Kosten
+
+Relay nutzt Claude ueber die **Claude Code CLI** (`claude -p`) - nicht ueber die API. Das heisst: alle Claude-Aufrufe (Chat und Build) laufen ueber dein bestehendes Claude Pro/Max Abo. Es fallen **keine separaten Token-Kosten** an. Lokale Modelle via Ollama sind sowieso kostenlos.
+
 ## Was es kann
 
 - **Zwei LLMs im Dialog** - Plan-LLM (z.B. Phi4 lokal) und Coder-LLM (z.B. Claude Code) diskutieren zusammen
